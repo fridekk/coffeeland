@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat&family=Mooli&family=Onest:wght@300&family=Poppins:wght@300&display=swap');
+body,html{
+    height:100%;
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#headinglogo{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 60px;
+}
+
+.fullscreen-block{
+    font-family: 'Monserrat', sans-serif;
+    background-image: url('kandinsky-download-1698824701242.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height:100%;
+    display: flex;
+    flex-direction: column; /* Добавлено для вертикального выравнивания элементов */
+    align-items: center; /* Выравнивание элементов по горизонтали */
+    justify-content: center;
+    font-size: 40px; /* Выравнивание элементов по вертикали */
+}
+
+
+
+.content-below{
+    padding: 20px;
+    background-color: #333 ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+   
+}
+.bd-placeholder-img{
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.bd-placeholder-img:hover{
+    transform: scale(1.02);
+}
+
+
+
+
+
+
+#cofeeheading{
+    font-size:50px ;
+    font-weight: 500;
+}
+
+#textheading{
+    display:flex;
+    justify-self: center;
+}
+
+
+.btnn {
+    --color: #3d8bfd;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    border: none;
+    background-color: transparent;
+}
+
+
+  
+.btnn div {
+    letter-spacing: 2px;
+    font-weight: bold;
+    background: var(--color);
+    border-radius: 2rem;
+    color: white;
+    padding: 10px 15px; /* Уменьшаем отступы внутри кнопки */
+    font-size: 20px; /* Уменьшаем размер текста */
+}
+
+  
+  .btnn::before {
+    content: '';
+    z-index: -1;
+    background-color: var(--color);
+    border: 2px solid white;
+    border-radius: 2rem;
+    width: 110%;
+    height: 100%;
+    position: absolute;
+    transform: rotate(10deg);
+    transition: .5s;
+    opacity: 0.2;
+  }
+  
+  .btnn:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+    transform: scale(1.1);
+  }
+  
+  .btnn:hover::before {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  
+  .btnn svg {
+    transform: translateX(-200%);
+    transition: .5s;
+    width: 0;
+    opacity: 0;
+  }
+  
+  .btnn:hover svg {
+    width: 25px;
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  
+  .btnn:active {
+    filter: brightness(1.4);
+  }
+
+  .soc{
+    
+  }
+  .soc:hover{
+    opacity: 0.6;
+  }
+
